@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PopMap - Comfort Navigation</title>
+  <!-- <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet"> -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+      type="text/css"
+    />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>PopMap</h1>
+      <p>Navigation optimized for comfort and safety</p>
+    </header>
+    
+    <div class="search-container">
+      <input type="text" id="start-location" placeholder="Starting location">
+      <input type="text" id="end-location" placeholder="Destination">
+      <button id="find-route">Find Routes</button>
+    </div>
+    
+    <div class="map-container">
+      <div id="map"></div>
+    </div>
+    
+    <div class="route-info">
+      <div class="route-card">
+        <h3>Fastest Route</h3>
+        <p id="fastest-route-info">Select locations to see route info</p>
+      </div>
+      <div class="route-card active">
+        <h3>Comfort Route</h3>
+        <p id="comfort-route-info">Select locations to see route info</p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/simple-statistics@7.8.0/dist/simple-statistics.min.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/venues.js"></script>
+  <script src="js/routing.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
